@@ -6,8 +6,8 @@ output reg o_data;
 
 always @(posedge i_clk)begin
 	if (i_ctrl)begin
-		o_data <= i_data [1];
-	end else o_data <= i_data [0];
+		o_data <= i_data [0];
+	end else o_data <= i_data [1];
 
 end
 
